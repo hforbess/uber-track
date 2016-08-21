@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mileage Entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mileage_entries.each do |mileage_entry| %>
+      <tr>
+        <td><%= link_to 'Show', mileage_entry %></td>
+        <td><%= link_to 'Edit', edit_mileage_entry_path(mileage_entry) %></td>
+        <td><%= link_to 'Destroy', mileage_entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mileage Entry', new_mileage_entry_path %>

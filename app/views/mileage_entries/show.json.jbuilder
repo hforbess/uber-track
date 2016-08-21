@@ -1,0 +1,1 @@
+json.partial! "mileage_entries/mileage_entry", mileage_entry: @mileage_entry

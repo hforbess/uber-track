@@ -1,0 +1,23 @@
+{
+  "name": "skel_app",
+  "description": "none",
+  "main": "huh",
+  "keywords": [
+    "huh"
+  ],
+  "authors": [
+    "harry forbess"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

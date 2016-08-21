@@ -1,0 +1,17 @@
+<%= form_for(mileage_entry) do |f| %>
+  <% if mileage_entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mileage_entry.errors.count, "error") %> prohibited this mileage_entry from being saved:</h2>
+
+      <ul>
+      <% mileage_entry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
